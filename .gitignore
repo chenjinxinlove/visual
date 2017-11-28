@@ -66,3 +66,4 @@ buck-out/
 \.buckd/
 android/app/libs
 *.keystore
+ftpConfig.js

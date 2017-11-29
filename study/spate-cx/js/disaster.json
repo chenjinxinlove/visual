@@ -1,0 +1,459 @@
+{
+"data":[
+ {
+   "year": 1950,
+   "farm": 6559,
+   "people": 1982,
+   "house": 130.5,
+   "money": null
+ },
+ {
+   "year": 1951,
+   "farm": 4173,
+   "people": 7819,
+   "house": 31.8,
+   "money": null
+ },
+ {
+   "year": 1952,
+   "farm": 2794,
+   "people": 4162,
+   "house": 14.5,
+   "money": null
+ },
+ {
+   "year": 1953,
+   "farm": 7187,
+   "people": 3308,
+   "house": 322,
+   "money": null
+ },
+ {
+   "year": 1954,
+   "farm": 16131,
+   "people": 42447,
+   "house": 900.9,
+   "money": null
+ },
+ {
+   "year": 1955,
+   "farm": 5247,
+   "people": 2718,
+   "house": 49.2,
+   "money": null
+ },
+ {
+   "year": 1956,
+   "farm": 14377,
+   "people": 10676,
+   "house": 465.9,
+   "money": null
+ },
+ {
+   "year": 1957,
+   "farm": 8083,
+   "people": 4415,
+   "house": 371.2,
+   "money": null
+ },
+ {
+   "year": 1958,
+   "farm": 4279,
+   "people": 3642,
+   "house": 77.1,
+   "money": null
+ },
+ {
+   "year": 1959,
+   "farm": 4813,
+   "people": 4540,
+   "house": 42.1,
+   "money": null
+ },
+ {
+   "year": 1960,
+   "farm": 10155,
+   "people": 6033,
+   "house": 74.7,
+   "money": null
+ },
+ {
+   "year": 1961,
+   "farm": 8910,
+   "people": 5074,
+   "house": 146.3,
+   "money": null
+ },
+ {
+   "year": 1962,
+   "farm": 9810,
+   "people": 4350,
+   "house": 247.7,
+   "money": null
+ },
+ {
+   "year": 1963,
+   "farm": 14071,
+   "people": 10441,
+   "house": 1435.3,
+   "money": null
+ },
+ {
+   "year": 1964,
+   "farm": 14933,
+   "people": 4288,
+   "house": 246.5,
+   "money": null
+ },
+ {
+   "year": 1965,
+   "farm": 5587,
+   "people": 1906,
+   "house": 95.6,
+   "money": null
+ },
+ {
+   "year": 1966,
+   "farm": 2508,
+   "people": 1901,
+   "house": 26.8,
+   "money": null
+ },
+ {
+   "year": 1967,
+   "farm": 2599,
+   "people": 1095,
+   "house": 10.8,
+   "money": null
+ },
+ {
+   "year": 1968,
+   "farm": 2670,
+   "people": 1159,
+   "house": 63,
+   "money": null
+ },
+ {
+   "year": 1969,
+   "farm": 5443,
+   "people": 4667,
+   "house": 164.6,
+   "money": null
+ },
+ {
+   "year": 1970,
+   "farm": 3129,
+   "people": 2444,
+   "house": 25.2,
+   "money": null
+ },
+ {
+   "year": 1971,
+   "farm": 3989,
+   "people": 2323,
+   "house": 30.2,
+   "money": null
+ },
+ {
+   "year": 1972,
+   "farm": 4083,
+   "people": 1910,
+   "house": 22.8,
+   "money": null
+ },
+ {
+   "year": 1973,
+   "farm": 6235,
+   "people": 3413,
+   "house": 72.3,
+   "money": null
+ },
+ {
+   "year": 1974,
+   "farm": 6431,
+   "people": 1849,
+   "house": 120,
+   "money": null
+ },
+ {
+   "year": 1975,
+   "farm": 6817,
+   "people": 29653,
+   "house": 754.3,
+   "money": null
+ },
+ {
+   "year": 1976,
+   "farm": 4197,
+   "people": 1817,
+   "house": 81.9,
+   "money": null
+ },
+ {
+   "year": 1977,
+   "farm": 9095,
+   "people": 3163,
+   "house": 50.6,
+   "money": null
+ },
+ {
+   "year": 1978,
+   "farm": 2820,
+   "people": 1796,
+   "house": 28,
+   "money": null
+ },
+ {
+   "year": 1979,
+   "farm": 6775,
+   "people": 3446,
+   "house": 48.8,
+   "money": null
+ },
+ {
+   "year": 1980,
+   "farm": 9146,
+   "people": 3705,
+   "house": 138.3,
+   "money": null
+ },
+ {
+   "year": 1981,
+   "farm": 8625,
+   "people": 5832,
+   "house": 155.1,
+   "money": null
+ },
+ {
+   "year": 1982,
+   "farm": 8361,
+   "people": 5323,
+   "house": 341.5,
+   "money": null
+ },
+ {
+   "year": 1983,
+   "farm": 12162,
+   "people": 7238,
+   "house": 218.9,
+   "money": null
+ },
+ {
+   "year": 1984,
+   "farm": 10632,
+   "people": 3941,
+   "house": 112.1,
+   "money": null
+ },
+ {
+   "year": 1985,
+   "farm": 14197,
+   "people": 3578,
+   "house": 142,
+   "money": null
+ },
+ {
+   "year": 1986,
+   "farm": 9155,
+   "people": 2761,
+   "house": 150.9,
+   "money": null
+ },
+ {
+   "year": 1987,
+   "farm": 8686,
+   "people": 3749,
+   "house": 92.1,
+   "money": null
+ },
+ {
+   "year": 1988,
+   "farm": 11949,
+   "people": 4094,
+   "house": 91,
+   "money": null
+ },
+ {
+   "year": 1989,
+   "farm": 11328,
+   "people": 3270,
+   "house": 100.1,
+   "money": null
+ },
+ {
+   "year": 1990,
+   "farm": 11804,
+   "people": 3589,
+   "house": 96.6,
+   "money": 239
+ },
+ {
+   "year": 1991,
+   "farm": 24596,
+   "people": 5113,
+   "house": 497.9,
+   "money": 779.08
+ },
+ {
+   "year": 1992,
+   "farm": 9423.3,
+   "people": 3012,
+   "house": 98.95,
+   "money": 412.77
+ },
+ {
+   "year": 1993,
+   "farm": 16387.3,
+   "people": 3499,
+   "house": 148.91,
+   "money": 641.74
+ },
+ {
+   "year": 1994,
+   "farm": 18858.9,
+   "people": 5340,
+   "house": 349.37,
+   "money": 1796.6
+ },
+ {
+   "year": 1995,
+   "farm": 14366.7,
+   "people": 3852,
+   "house": 245.58,
+   "money": 1653.3
+ },
+ {
+   "year": 1996,
+   "farm": 20388.1,
+   "people": 5840,
+   "house": 547.7,
+   "money": 2208.36
+ },
+ {
+   "year": 1997,
+   "farm": 13134.8,
+   "people": 2799,
+   "house": 101.06,
+   "money": 930.11
+ },
+ {
+   "year": 1998,
+   "farm": 22291.8,
+   "people": 4150,
+   "house": 685.03,
+   "money": 2550.9
+ },
+ {
+   "year": 1999,
+   "farm": 9605.2,
+   "people": 1896,
+   "house": 160.5,
+   "money": 930.23
+ },
+ {
+   "year": 2000,
+   "farm": 9045.01,
+   "people": 1942,
+   "house": 112.61,
+   "money": 711.63
+ },
+ {
+   "year": 2001,
+   "farm": 7137.78,
+   "people": 1605,
+   "house": 63.49,
+   "money": 623.03
+ },
+ {
+   "year": 2002,
+   "farm": 12384.21,
+   "people": 1819,
+   "house": 146.23,
+   "money": 838
+ },
+ {
+   "year": 2003,
+   "farm": 20365.7,
+   "people": 1551,
+   "house": 245.42,
+   "money": 1300.51
+ },
+ {
+   "year": 2004,
+   "farm": 7781.9,
+   "people": 1282,
+   "house": 93.31,
+   "money": 713.51
+ },
+ {
+   "year": 2005,
+   "farm": 14967.48,
+   "people": 1660,
+   "house": 153.29,
+   "money": 1662.2
+ },
+ {
+   "year": 2006,
+   "farm": 10521.86,
+   "people": 2276,
+   "house": 105.82,
+   "money": 1332.62
+ },
+ {
+   "year": 2007,
+   "farm": 12548.92,
+   "people": 1230,
+   "house": 102.97,
+   "money": 1123.3
+ },
+ {
+   "year": 2008,
+   "farm": 8867.82,
+   "people": 633,
+   "house": 44.7,
+   "money": 955.44
+ },
+ {
+   "year": 2009,
+   "farm": 8748.16,
+   "people": 538,
+   "house": 55.59,
+   "money": 845.96
+ },
+ {
+   "year": 2010,
+   "farm": 17866.69,
+   "people": 3222,
+   "house": 227.1,
+   "money": 3745.43
+ },
+ {
+   "year": 2011,
+   "farm": 7191.5,
+   "people": 519,
+   "house": 69.3,
+   "money": 1301.27
+ },
+ {
+   "year": 2012,
+   "farm": 11218.09,
+   "people": 673,
+   "house": 58.6,
+   "money": 2675.32
+ },
+ {
+   "year": 2013,
+   "farm": 11777.53,
+   "people": 775,
+   "house": 53.36,
+   "money": 3155.74
+ },
+ {
+   "year": 2014,
+   "farm": 5919.43,
+   "people": 486,
+   "house": 25.99,
+   "money": 1573.55
+ }
+]
+}

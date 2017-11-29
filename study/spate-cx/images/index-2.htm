@@ -1,0 +1,630 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+	
+	<title>After the Flood</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <link rel="stylesheet" href="cover_topic-1.css" tppabs="http://datanews.caixin.com/mobile/flood/en/css/cover_topic.css" />
+    <link rel="stylesheet" type="text/css" href="styles-1.css" tppabs="http://datanews.caixin.com/mobile/flood/en/css/styles.css"/>
+    <script src="d3.min-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/d3.min.js" charset="utf-8"></script>
+	<script src="jquery-1.7.2.min-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/jquery-1.7.2.min.js" language="javascript"></script>
+	<script src="jquery.easing.1.3-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/jquery.easing.1.3.js" language="javascript"></script>
+	<script src="jquery-1.12.4-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/jquery-1.12.4.js"></script>
+    <script src="jquery-ui-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/jquery-ui.js"></script>
+    <script src="draggable_fix-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/draggable_fix.js"></script>
+    <script src="tour-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/vtour/tour.js"></script>
+    
+</head>
+<style>
+		@-ms-viewport { width:device-width; }
+		
+</style>
+<body>
+	<div class="loading">
+		<div class="loader"></div>
+		<p id="loadingPercent"></p>
+	</div>
+
+	<div class="main">
+		<div class="part part-0 preload">
+			<!--<img class="cover-img1" src="images/cover-photo.jpg" alt="photo">-->
+			
+
+			<div id="pano" style="width:100%;height:100%;">
+				<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+				<script>
+					if($(window).width()>=768)
+						embedpano({swf:"tour-1.swf"/*tpa=http://datanews.caixin.com/mobile/flood/en/vtour/tour.swf*/, xml:"http://datanews.caixin.com/mobile/flood/en/vtour/tour.xml", target:"pano", html5:"prefer", mobilescale:1.0, passQueryParameters:true});
+					else
+						embedpano({swf:"tour-1.swf"/*tpa=http://datanews.caixin.com/mobile/flood/en/vtour/tour.swf*/, xml:"http://datanews.caixin.com/mobile/flood/en/vtour/tour-m.xml", target:"pano", html5:"prefer", mobilescale:1.0, passQueryParameters:true});
+				</script>				
+			</div>
+
+			<!--<audio id="cover-audio" loop>
+					<source src="http://file.caixin.com/datanews/flood/cover-audio.mp3"  type="audio/mpeg">
+					<source src="http://file.caixin.com/datanews/flood/cover-audio.wav"  type="audio/wav">
+			</audio>-->
+			<div class="play-btn mobile-only"><img src="play-btn-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/play-btn.png" width="100%"></div>
+			<div class="cover-headline" id="cover-headline">
+				<div class="header"></div>
+			    <img class="cover-title" src="cover-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/cover.png" width="990px" >
+			    <div class="pc-caption">PC版本效果更佳<br/>caixin.com/flood</div>
+			</div>
+			<div class="flood-replay"></div>
+		</div>
+
+		<div class="part part-1 part-backcover">
+			<video class="flood-video" src="flood_video.mp4" tppabs="http://file.caixin.com/datanews/flood/flood_video.mp4" id="flood-video" width="100%" height="100%" poster="http://file.caixin.com/datanews/flood/flood-video-cover.png" webkit-playsinline ></video>			
+			<div class="flood-video-control">
+				<div class="flood-video-control-bar"></div>
+			</div>
+
+			<script type="text/javascript" charset="utf-8" src="bcloud.js" tppabs="http://yuntv.letv.com/player/vod/bcloud.js"></script> 
+			<script type="text/javascript"> 
+			if($(window).width()<768){
+				var leWidth = $(window).width();
+				var leHeight = $(window).width()*720/1280;
+				var player = new CloudVodPlayer(); player.init({"uu":"kd9ksjef36","vu":"76cadc70a7","pu":"26012e9127","auto_play":0,"gpcflag":1,"width":leWidth,"height":leHeight,"lang":"zh_CN"}); 
+			}
+			</script>
+		</div>
+
+		
+		<div class="part part-2 part-cons">
+			<div class="sub-head-box part-backcover">
+				<div class="title-left"></div>	
+				<h3>The Village of Taitou</h3>
+				<div class="title-right"></div>				
+			</div>
+			<div class="news-cons-s1 part-backcover">
+				<p>Early December, four months after the flood, construction workers were trying to rebuild the terraces at western border the village of Taitou, where a destructive torrent had swept through.</p>
+				<p>The spate of water, brought by a long-lasting torrential rainfall during 18-21 July 2016 that widely affected northern and central China, also attacked the community at the eastern part of the village and claimed eight lives with another three missing.</p>		
+				
+			</div>
+
+			<div class="photo">
+				<ul class="photo-album photo-album1">				
+				<li>
+					<div class="photo-album-frame" style="display:block">
+						<div class="photo-album-pic"><img src="photo-1-01-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-01.jpg" width="100%"></div>
+						<div class="photo-album-caption">Just after the flood: Liu Mingyuan's store was full of mud</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-02-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-02.jpg" width="100%"></div>
+						<div class="photo-album-caption">Four months after the flood: Liu Mingyuan's store</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-03-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-03.jpg" width="100%"></div>
+						<div class="photo-album-caption">Just after the flood: Liu Guoyuan's textile workshop</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-04-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-04.jpg" width="100%"></div>
+						<div class="photo-album-caption">Four months after the flood: Liu and his wife became migrant workers and went to a southern city to earn a living</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-05-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-05.jpg" width="100%"></div>
+						<div class="photo-album-caption">Xu Guoxin lost his parents in the disaster.</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-06-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-06.jpg" width="100%"></div>
+						<div class="photo-album-caption">After the flood, Xu Guoxin let the house to a villager for free.</div>
+					</div>
+				</li>
+
+				
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-08-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-08.jpg" width="100%"></div>
+						<div class="photo-album-caption">Xu Yueting lost his wife, daughter and grandchild durign the disaster.</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-07-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-07.jpg" width="100%"></div>
+						<div class="photo-album-caption">Zhou Bolia, son-in-law of Xu Yueting, at the rubble of the house where his wife and the enfant lived</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-09-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-09.jpg" width="100%"></div>
+						<div class="photo-album-caption">Aerial photo of Taitou village, Jingxing county, Hebei Province on July 24, 2016</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-10-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-10.jpg" width="100%"></div>
+						<div class="photo-album-caption">Aerial photo of Taitou village on December 8, 2016</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-11-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/photo-1-11.jpg" width="100%"></div>
+						<div class="photo-album-caption">Reconstruction of road and park in Taitou village</div>
+					</div>
+				</li>
+				<ul class="sub-head-points">
+						<li class="now"></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+					</ul>
+				
+				</ul>
+					
+			</div>
+			
+			
+			<div class="news-cons-s1 text-overflow">
+				<p>To the villagers, the flood on 19 July 2016 was unusual because Taitou is located at Jingxing, a county at the western region of the city of Shijiazhuang in Hebei province, with dry climate and little precipitation in average years.</p>
+				<p>The unexpected heavy rainstorm hit not only Jingxing, but also the counties nearby, Xingtai and Handan, leading to 9.2 million people stranded, 130 people died and 110 missing in Hebei province.</p>
+				<p>Recalling the disaster, the elderly people in Taitou were still shocked and distressed. As described by the old villagers, lives and properties were “scratched away” by the deluge.</p>
+				<p>Life after the flood was hard for the residents. There once were 30-40 stores in the community, however, only half of them were managed to carry on their business after the incident.</p>
+				<p>Chen Lijuan, born and raised in Taitou remembered that the commercial street was the busiest place in the village.</p>
+				<p>The food stores at the commercial street was open again. Liu Mingyuan owned one of them. He said that the damage by the flood cost him about a few hundred thousands Chinese yuan.</p>
+				<p>Liu Guoyuan once had a garment-processing factory in the village hiring around 20 workers. He could do nothing but laid off his staff and sold all the sewing machines, which were wrecked by the mudslide. Then he went to a southern city of China with his wife and became a migrant worker.</p>
+				<p>The flood had devastated villager Xu Yueting’s life. He lost his wife, daughter and grandson in the tragic incident.</p>
+				<p>Reconstruction of road, park, and bridge were going on in Taitou in this winter. According to a reporting from Caixin.com, in late 1960s, villagers started to reclaim an area from the dried out river near the community. It had been 20 years since the previous flooding occurred in Taitou. It was said that the lack of prevention and protection measures had made the situation even more adverse.</p>
+			</div>
+			
+		</div>
+
+		<div class="part part-3">
+		<div class="interactive-wrapper div-shadow">
+			 <div class="map-caption-box map-caption1">
+			 	  <div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/map-pin.png" height="16px" />Wuhan, Hubei</p>
+			      <p>Continous rain from June 30 to Jult 6: the city was severely swamped</p>
+			    </div>
+			 <div class="map-caption-box map-caption2">
+			 	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/map-pin.png" height="16px"/>Xingtai, Hebei</p>
+			      <p>Continous rain from July 19 to July 21: 25 people died and 13 were missing, official reported on July 23</p>
+			    </div>
+
+			 <div class="map-caption-box map-caption3">
+			 	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/map-pin.png" height="16px"/>Jingxing, Hebei</p>
+			      <p>Continous rain from July 19 to July 20: 36 people died and 35 were missing, official reported on July 24</p>
+			    </div>
+
+			     <div class="map-caption-box map-caption4">
+			     	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/map-pin.png" height="16px"/>Wu'an, Hebei</p>
+			     <p>Continous rain from July 19 to July 20: 20 people were missing, official reported on July 20</p>
+			    </div>
+			     <div class="map-caption-box map-caption5">
+			     	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/map-pin.png" height="16px"/>Yixing, Jiangsu</p>
+			       <p>Continous rain from June 30 to Jult 6: the river bank broke on July 4</p>
+			    </div>
+			    <div class="map-caption-box map-caption6">
+			    	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/map-pin.png" height="16px"/>Yancheng, Jiangsu</p>
+			      <p>Hurricane on June 23: 98 died and 800 injured, official reported on Jun 24</p>
+			    </div>
+			     <div class="map-caption-box map-caption7">
+			     	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/map-pin.png" height="16px"/>Manqing, Fujian</p>
+			      <p>Typhoon Nepartak affected in early July: 60 people died reported by the official on Jul 14</p>
+			    </div>
+			<div class="map">
+			    <div class="map-pin map-pin1"></div>			   
+			    <div class="map-pin map-pin2"></div>
+			    <div class="map-pin map-pin3"></div>
+			    <div class="map-pin map-pin4"></div>
+			    <div class="map-pin map-pin5"></div>
+			    <div class="map-pin map-pin6"></div>
+			    <div class="map-pin map-pin7"></div>			   
+			</div>
+
+			<div class="map-part1-timeline">
+			      <div class="map-part1-timeline-line"></div>
+			      <div class="map-part1-timeline-pointer"></div>
+			      <div class="date-box">
+			        <span id="date-tag">3-1</span>               
+			      </div>
+			</div>
+			<div class="map-part1-cityline">
+			      <div class="map-part1-dotted-line"></div>
+			      <div class="map-part1-cityline-name">城市</div>
+			      <div class="map-line-number"></div>
+			</div>
+
+			<div class="chart-title rain-title1">An Unprecendentedly Drenching Rain</div>
+			<div class="chart-title rain-title2">110 million people affected<br><span style="font-size:16px">Jan-Sep, 2016</span></div>
+			<div class="chart-rain-caption pc-only">Note: rainfall data was from Global Telecommunication System of World Meteorological Organization retrieved by rp5.ru. Only data of selected cities is shown.</div>
+			<div class="map-legend map-legend-1 ">Area: precipitation</div>
+			<div class="map-legend map-legend-2 ">Colour gradient: number of raining events</div>
+			<div class="nanhai"></div>
+			<div class="map-replay" alt="replay"></div>
+			<div class="map-zoom pc-only" alt="zoom in"></div>
+			<div class="map-zoom-out pc-only" alt="zoom out"></div>
+			
+
+		</div> 
+		</div>
+
+		<script src="rain_chart-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/rain_chart.js"></script>
+		<div class="part">
+			<div class="news-cons-s1 mobile-only">
+				<p class="data-label">注：雨量数据来自网站rp5.ru所整理的世界气象组织全球通信系统数据。图中显示地点为2016年3-8月七次强降雨事件中，受影响较大的城市，以及年内各省受洪涝灾害影响较为严重的地点。（除港澳台地区）</p>
+			</div>
+		</div>
+		<div class="part part-4 part-cons" style="padding-top: 40px">
+			<div class="sub-head-box">
+				<div class="title-left"></div>
+				<h3>The Deadly Water</h3>			
+				<div class="title-right"></div>	
+			</div>
+			
+			<div class="news-cons-s1 text-overflow">
+				<p>How frail and helpless can human beings be when confronting the nature?</p>
+				<p>In autumn 2016, Ministry of Civil Affairs of the PRC published the report on the national natural disaster. From January to September 2016, natural disasters resulted in 190 million people afflicted, 1317 people dead and 319 people missing in China. The casualties are 12% more than the five-year average.</p>
+				<p>Among different kind of natural disasters, floods brought about the worst hit to China in 2016, killing 1162 people, leaving more than 110 million people afflicted (58% of all the people affected by all kinds of natural disasters) and 6 million stranded.</p>
+				<p>There were 28 out of 31 provinces and autonomous regions in China hit by floods.</p>
+				<p>The worst ones happened in Hebei, Hubei, Henan and Hunan province, during June and July. </p>
+			</div>
+		</div>
+
+
+
+		<div class="part part-5">
+			<div class="interactive-wrapper div-shadow">
+				<!---->
+				<div class="chart-title disaster-title">Flood Damage (Mar-June, 2016)</div>
+				<div class="damage-chart" style="margin-top:40px">
+					<img src="damage-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/damage.png" width="100%" >
+				</div>
+
+			</div>
+		</div>
+
+		<div class="part part-6 part-cons" style="padding-top: 40px">
+			<div class="sub-head-box">
+				<div class="title-left"></div>
+				<h3>Wuhan, the City by the Yangtze River</h3>			
+				<div class="title-right"></div>	
+			</div>
+
+			<div class="news-cons-s1 text-overflow">
+				<p>It was raining lingeringly in Southern China in Springtime 2016. The flood control might be a grim battle, warned by China Meteorological Administration in March.</p>
+				<p>The flood period of China in 2016 started on Mar 21, 11 days earlier than average years.</p>
+				<p>In late June, a long-lasting heavy rain hit the mid and lower stream of Yangtze River, leaving swamps, landslide and mudslide in 11 provinces.</p>
+				<p>Wuhan, a city at the midstream of Yangtze River, was affected very severely with an unprecedentedly heavy precipitation. Roads and rails were blocked; the only means of transport was inflatable kayak.</p>
+				<p>To the residents in Wuhan, it might not be a surprise to see a flooding city in summertime. As stated in the local chronicles, Wuhan, with her civilizations and economy being nurtured by the water of Yangtze River, suffers from inundations year after year during rainy season.</p>
+			</div>
+
+
+			<div class="photo">
+				<ul class="photo-album photo-album2">				
+				<li>
+					<div class="photo-album-frame" style="display:block">
+						<div class="photo-album-pic"><img src="wuhan_5_1-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/wuhan_5_1.jpg" width="100%"></div>
+						<div class="photo-album-caption">Caidian district of Wuhan, Hubei province: the "empty-nest" elderly people (those elderly who have no child or whose children left home) had to face the natuaral disaster by themselves</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="wuhan_5_2-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/wuhan_5_2.jpg" width="100%"></div>
+						<div class="photo-album-caption">Caidian district of Wuhan, Hubei province: the "empty-nest" elderly people had to face the natuaral disaster by themselves</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="wuhan_5_3-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/wuhan_5_3.jpg" width="100%"></div>
+						<div class="photo-album-caption">Caidian district of Wuhan, Hubei province: the "empty-nest" elderly people had to face the natuaral disaster by themselves</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="wuhan_5_4-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/wuhan_5_4.jpg" width="100%"></div>
+						<div class="photo-album-caption">Caidian district of Wuhan, Hubei province: the "empty-nest" elderly people had to face the natuaral disaster by themselves</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="wuhan_5_5-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/wuhan_5_5.jpg" width="100%"></div>
+						<div class="photo-album-caption">Caidian district of Wuhan, Hubei province: the "empty-nest" elderly people had to face the natuaral disaster by themselves</div>
+					</div>
+				</li>
+				<ul class="sub-head-points">
+						<li class="now"></li><li></li><li></li><li></li><li></li>
+					</ul>
+				</ul>
+					
+				
+			</div>
+
+			<div class="news-cons-s1 text-overflow">
+				<p>The altitude of Wuhan is below the altitude of Yangtze River, leading to an unsuccessful natural drainage. While rapid urban development that destroys natural vegetation, reclaim ponds for more land, alters river stream and withdraws underground water also exacerbates the condition.</p>
+				<p>Shahu is the second-large lake in the city. When comparing the aerial satellite photos of the area from 2000 to 2016, it was found that the surface area of the lake had been reduced gradually year by year. Real estate construction site also appeared on the reclaimed “new land”.</p>
+				<p>In 2013 June, the municipal government of Wuhan had promised to invest 13 billion yuan on strengthening the city’s drainage system and waste water treatment plant in 3 years’ time.</p>
+				<p>The city swamped again in 2016.</p>
+			</div>
+
+			<div class="sub-head-box" style="margin-top: 40px">
+				<div class="title-left"></div>
+				<h3>Flood Disasters: Natural or man-made?</h3>		
+				<div class="title-right"></div>		
+			</div>
+
+			<div class="news-cons-s1 text-overflow">
+				<p>Water nurtures civilizations and benefits cities. Water could also be destructive.</p>
+				<p>China is one of the countries most affected by floods, according to the book <i>Rainstorm and Flood</i>, published by the country’s meteorological department. It is stated in the publication that half of the county’s population resides in flood risk area.</p>
+				<p>A report from the State Flood Control and Drought Relief Headquarters of China revealed that floods killed 280 thousands of people in the country from 1950 to 2014. On average, 4327 people died in flooding disaster per year. After millennium, more than 130 million people were affected by flood per year. China has a population of around 1.3 billion.</p>
+				<p>According to the aforementioned publication, the flood hazard is becoming more severe and the hazard area had been expanding based on statistics. The book also explained why flooding is so frequent and extreme in China: geographically speaking, the country overlays 6 climate zones, connects with ocean, and has a complex terrain. All these give rise to a very strong monsoon weather and excessive rainfall in the country.</p>
+				<p>In addition, the extensive river systems in China also aggravate the inundation in the region.</p>
+			</div>
+
+			<div class="chart dilishu">
+				<div class="chart-title">Frequent Flooding in China</div>
+				<ul class="dilishu-nav-points"><li class="now"></li><li></li><li></li><li></li><li></li><li></li></ul>
+				<ul class="chart-slides">
+					<li style="display: block;"><img src="book-1-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/book-1.jpg" width="100%"></li>
+					<li class="chart-slide" ><img src="book-2-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/book-2.jpg" width="100%"></li>
+					<li class="chart-slide" ><img src="book-3-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/book-3.jpg" width="100%"></li>
+					<li class="chart-slide" ><img src="book-4-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/book-4.jpg" width="100%"></li>
+					<li class="chart-slide" ><img src="book-5-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/book-5.jpg" width="100%"></li>
+					<li class="chart-slide" ><img src="book-6-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/en/images/book-6.jpg" width="100%"></li>
+				</ul>
+				
+			</div>
+			
+			<div class="news-cons-s1">
+				<p class="data-label">Source: <i>Rainstorm and Flood</i>, cma.gov.cn<br>(Autoplay)</p>
+			</div>
+			
+			<div class="news-cons-s1 dilishu_bottom text-overflow"  style="margin-top: 40px" >
+				<p>From 1978, the beginning of China’s reform era, to 2015, China’s urban population had increased from 18% to 56.1%. The rapid urbanization is now threatening the environmental sustainability of the area.</p>
+				<p>A study on the effect of urbanization on flood risk in the Yangtze River Delta by the team of researchers led by Li Guofang in Hehai University published in 2013 showed that the flood hazards of 6 urbanized areas in the Delta “present an increasing trend in the process of urbanization” though the flood vulnerability decreased with the enhancement of flood prevention infrastructure.</p>
+				<p>An official document dated October 2010 from the Ministry of Water Resources of the PRC also revealed that the flood control became more difficult due to population growth, extensive economic development and the impact of climate change.</p>
+			</div>
+
+
+			<div class="sub-head-box" style="margin-top: 40px">
+				<div class="title-left"></div>
+				<h3>El Niño and 1998 China Floods</h3>
+				<div class="title-right"></div>				
+			</div>
+
+			<div class="news-cons-s1 text-overflow">
+				<p>In 1998, several massive flooding caused by torrential rain hit a large area of China. The hardest hit occurred in Hunan, Hebei, Jiangxi, Anhui, and Jiangsu. According to official, 1562 were killed and 84 million stranded.</p>
+				<p>The similarity between the year of 2016 and 1998 was that both years came after a strong El Niño event, which brings extreme weathers and series of torrential rain to the territory</p>
+				<p>The official had warned in early 2016 that the floods in Yangtze River Basin were very likely to be as hazardous as the ones in 1998.</p>
+				<p>The China Meteorological Administration published in late 2016 the precipitation data of the year, showing that the annual national average rainfall reached 711 mm, the highest since 1951 when the relevant meteorological record was established. The Yangtze River Basin recorded a highest rainfall since 1954; 184 counties and cities recorded their highest accumulated precipitation.</p>
+			</div>
+		
+			<div class="chart chart98">				
+				<div class="chart-title">The Year of 1998 and the Year of 2016</div>
+				<ul class="chart-nav-points"><li class="now"></li><li></li><li></li><li></li></ul>
+				<img src="chart-3-1-2.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/chart-3-1.png" width="100%">
+				<ul class="chart-slides">
+					<li style="display: block;"><img src="chart-3-2-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/chart-3-2.png" width="100%"></li>
+					<li ><img src="chart-3-3-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/chart-3-3.png" width="100%"></li>
+					<li ><img src="chart-3-4-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/chart-3-4.png" width="100%"></li>
+					<li ><img src="chart-3-5-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/chart-3-5.png" width="100%"></li>
+				</ul>
+
+			</div>
+			
+			<div class="news-cons-s1">
+				<p class="data-label">(Autoplay)</p>
+			</div>
+			
+			<div class="sub-head-box" style="margin-top: 40px">
+				<div class="title-left"></div>
+				<h3>The Disasters that Went Unnoticed</h3>		
+				<div class="title-right"></div>		
+			</div>
+
+			<div class="news-cons-s1">
+				<p>The massive flooding in 2016 drew a great deal of attention from the public. While floods happened in localities often went unnoticed even though they brings devastating impact to the neighbourhood.</p>
+				<p>A team from the Institute of Atmospheric Physics, Chinese Academy of Sciences had published a research on rainstorm and flood hazards in 1991 to 1994. After classifying each flood into five levels, namely very small, small, medium, serious and very serious, by assessing the affected area, casualty and economic cost of the inundation, the team found that most of the flooding disasters in China are small and very small, contributing to 83.2% of total occurrence of floods in the period of study. Very serious floods only take up 2%.</p>
+				<p><b>——Flood disasters are very common in China, but “most of the small and medium disasters are left unnoticed”.</b></p>
+			</div>
+		</div>
+		
+
+		<div class="part part-7">
+			<div class="disaster interactive-wrapper div-shadow">
+				<div class="disaster-title chart-title">Loss in Flood Disaster in China (1950-2014)<br/>
+
+
+				</div>
+
+				<div class="disaster-nav">
+					<ul>
+						<li>Area of Crop Affected (thousand ha)</li>
+						<li>Directed Economic Loss (hundred million)</li>
+						<li>Collasped Buildings (10 thousand)</li>
+						<li>Death</li>
+					</ul>
+				</div>
+				<div class="disaster-chart">
+					 
+				</div>
+			</div>				
+		</div>
+		<div class="part">
+			<div class="news-cons-s1 label-disaster">
+				<p class="data-label">Source: Bulletin of Flood and Drought Disasters in China 2014</p>
+			</div>
+		</div>
+
+		<script src="disaster_chart-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/disaster_chart.js"></script>
+
+		<div class="part part-8 part-cons" style="padding-top: 40px" >
+			<div class="news-cons-s1 text-overflow">
+				<p>“Most of the small and medium disaster are left unnoticed,” said She Lei, director of disaster prevention and management at One Foundation, “but it doesn’t mean that the impact is negligible to those flood victims.”</p>
+				<p>Sha Lei and his colleagues were working on ground as an NGO rescue team in Hubei and Hebei this summer. In Wuhan city, provincial capital of Hubei, they helped relocate residents before the swamp. He noticed that there is room for improvement for the hygiene condition in the resettlement site.</p>
+				<p>Working for ten years in the field of disaster management, Sha Lei found that the public is paying more attention to how humanistic care can be done in disaster relief.</p>
+				<p>He also observed that self-help ability had been weakened due to the hollowing -out of rural area under the trend of urbanization – many young adults leave their villages and poured into the cities. </p>
+				<p>Disaster relief and management had to focus more on how to provide specific care services to children and elderly people in the flood area, suggested Sha Lei.</p>
+			</div>
+		</div>
+
+		<div class="part part-9">
+			<div class="news-cons-s1 ending">
+				<p>Taitou is a village of Shijiazhuang, the China's provincial capital of the worst air pollution and PM2.5 concentration, has to temporary shut down its mineral factories in winter. This makes the lives of the village after the flood is even harder.</p>				
+			</div>
+		</div>
+		
+		
+		<div class="bottom">
+			<div class="bottom-credits">
+				<p><b>Reporters: </b>Chan Ka Wai, Chen Liang</p>
+				<p><b>Developer: </b>Wei Meng</p>
+				<p><b>Photographers: </b>Chen Liang, Liang Yingfei</p>
+				<p><b>Video Editors: </b>Zhou Yining, Hu Fenhai, Qin Leiyu, Liu Dake (Intern)</p>
+				<p><b>Producers: </b>Huang Chen, Qiu Jiaqiu</p>
+				<p>Special Thanks to Luo Lilan, Du Guanglei, Chen Weixi, Zhu Haojie (Intern)</p>
+				<p><b>Some of the Photos in the Projects are from:</b>Visual China Group</p>
+				<p>&nbsp;</p>
+				<p>Note: </p>
+				<p>Data of Disaster Loss in Hebei used in the header video was up to July 25, 2016</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<div class="bottom-qr pc-only"><img src="qr-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/qr.png" width="160px"></div>
+			</div>
+			
+			
+
+		</div>
+	</div>
+	<div class="ending-bg"></div>
+
+	<div class="float-box">
+		
+		<div class="scroll-tip"><img id="sroll-tip-image" src="point-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/point.png" alt="scroll-tip"></div>
+		<div class="cx-logo"><a href="javascript:if(confirm(%27http://www.caixin.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.caixin.com/%27" tppabs="http://www.caixin.com/"><img src="caixin-1.png" tppabs="http://datanews.caixin.com/mobile/flood/en/images/caixin.png" alt="财新"></a></div>
+
+
+		
+	</div>
+
+	<div class="cx-lan pc-only" style="width:40px; position: absolute; top:10px; left:94%; z-index: 999999; color: #fff"><a href="javascript:if(confirm(%27http://caixin.com/flood/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://caixin.com/flood/%27" tppabs="http://caixin.com/flood/">中文版</a></div>
+	<style>
+	 .cx-lan a{color: #fff; cursor: pointer;}
+	</style>
+<!-- 财新网客户端分享代码 -->
+<div style="display:none" id="__cxnewsapp_topbar">分享按钮是否显示的标志</div>
+<div style="display:none" id="__cxnewsapp_orientation">flexible</div>
+<div style="display:none" id="__cxnewsapp_sharetext">财新 | 2016年终策划：洪水暴至（建议Wi-Fi浏览）</div>
+<div style="display:none" id="__cxnewsapp_sharephotourl">http://datanews.caixin.com/mobile/flood/images/weixin.png</div>
+<div style="display:none" id="__cxnewsapp_sharewxurl">http://datanews.caixin.com/mobile/flood/index.html</div>
+<div style="display:none" id="__cxnewsapp_sharewxthumburl">http://datanews.caixin.com/mobile/flood/images/weixin.png</div>
+<div style="display:none" id="__cxnewsapp_sharewxtitle">财新 | 2016年终策划：洪水暴至（建议Wi-Fi浏览）</div>
+<div style="display:none" id="__cxnewsapp_sharewxtext">2016年前11个月中国平均降水量创纪录，是1951年以来最多的一年，前三季度暴雨洪灾共造成1.1亿人次受灾</div>
+
+<!-- 微信分享代码 -->
+
+<script src="jweixin-1.0.0-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/jweixin-1.0.0.js"></script>
+<script src="get_wx_config-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/get_wx_config.js"></script>
+<script>
+	
+    getWXConfig();
+
+    var imgUrl = "weixin.png"/*tpa=http://datanews.caixin.com/mobile/flood/images/weixin.png*/;
+    var lineLink = "index.htm"/*tpa=http://datanews.caixin.com/mobile/flood/index.html*/;
+    var shareTitle = '财新 | 2016年终策划：洪水暴至（建议Wi-Fi浏览）';
+    var descContent = '2016年前11个月中国平均降水量创纪录，是1951年以来最多的一年，前三季度暴雨洪灾共造成1.1亿人次受灾';
+  
+    var appid = '';
+
+    wx.ready(function(){
+        wx.onMenuShareTimeline({
+            title: shareTitle, // 分享标题
+            link: lineLink, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: function () {
+                // 用户下一步分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareAppMessage({
+            title: shareTitle, // 分享标题
+            desc: descContent, // 分享描述
+            link: lineLink, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            type: '', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            success: function () {
+                // 用户下一步分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareQQ({
+            title: shareTitle, // 分享标题
+            desc: descContent, // 分享描述
+            link: lineLink, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: function () {
+                // 用户下一步分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareWeibo({
+            title: shareTitle, // 分享标题
+            desc: descContent, // 分享描述
+            link: lineLink, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: function () {
+                // 用户下一步分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+    });
+ 
+</script>
+
+<script src="main-1.js" tppabs="http://datanews.caixin.com/mobile/flood/en/js/main.js"></script>
+<!--caixin analytics start-->
+<script type="text/javascript" src="caixinlog.js" tppabs="http://file.caixin.com/webjs/common/caixinlog.js"></script>
+<!--caixin analytics end-->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+ga('create','UA-27956240-1','http://datanews.caixin.com/mobile/flood/en/caixin.com');
+ga('require','displayfeatures');
+
+var dimensionObject = document.getElementById("author_baidu");
+if(typeof(dimensionObject)=="object"&&dimensionObject!=null){
+var dimensionValue = dimensionObject.innerHTML;
+ga('set','dimension1',dimensionValue);
+ga('send','pageview',{'dimension1':dimensionValue});
+}else{
+ga('send','pageview');
+}
+</script>
+
+</body>
+</html>

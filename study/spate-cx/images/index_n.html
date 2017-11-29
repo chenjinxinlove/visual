@@ -1,0 +1,634 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+	
+	<title>2016洪水暴至</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <link rel="stylesheet" href="cover_topic.css" tppabs="http://datanews.caixin.com/mobile/flood/css/cover_topic.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" tppabs="http://datanews.caixin.com/mobile/flood/css/styles.css"/>
+    <script src="d3.min.js" tppabs="http://datanews.caixin.com/mobile/flood/js/d3.min.js" charset="utf-8"></script>
+	<script src="jquery-1.7.2.min.js" tppabs="http://datanews.caixin.com/mobile/flood/js/jquery-1.7.2.min.js" language="javascript"></script>
+	<script src="jquery.easing.1.3.js" tppabs="http://datanews.caixin.com/mobile/flood/js/jquery.easing.1.3.js" language="javascript"></script>
+	<script src="jquery-1.12.4.js" tppabs="http://datanews.caixin.com/mobile/flood/js/jquery-1.12.4.js"></script>
+    <script src="jquery-ui.js" tppabs="http://datanews.caixin.com/mobile/flood/js/jquery-ui.js"></script>
+    <script src="draggable_fix.js" tppabs="http://datanews.caixin.com/mobile/flood/js/draggable_fix.js"></script>
+    
+</head>
+<style>
+		@-ms-viewport { width:device-width; }
+		
+</style>
+<body>
+	<div class="loading">
+		<div class="loader"></div>
+		<p id="loadingPercent"></p>
+	</div>
+
+	<div class="main">
+		<div class="part part-0 cover-img0 preload">
+			
+			<audio id="cover-audio" autoplay="autoplay">
+					<source src="cover-audio.mp3" tppabs="http://file.caixin.com/datanews/flood/cover-audio.mp3"  type="audio/mpeg">
+					<source src="cover-audio.wav" tppabs="http://file.caixin.com/datanews/flood/cover-audio.wav"  type="audio/wav">
+			</audio>
+
+			<div class="cover-headline" id="cover-headline">
+				<div class="header"></div>
+			    <img class="cover-title" src="cover.png" tppabs="http://datanews.caixin.com/mobile/flood/images/cover.png" width="990px" >
+			    <div class="pc-caption">PC版本效果更佳<br/>caixin.com/flood</div>
+			</div>
+			<div class="flood-replay"></div>
+		</div>
+
+		<div class="part part-1 part-backcover">
+			<video class="flood-video" src="flood_video.mp4" tppabs="http://file.caixin.com/datanews/flood/flood_video.mp4" id="flood-video" width="100%" height="100%" poster="http://file.caixin.com/datanews/flood/flood-video-cover.png" webkit-playsinline ></video>			
+			<div class="flood-video-control">
+				<div class="flood-video-control-bar"></div>
+			</div>
+
+			<script type="text/javascript" charset="utf-8" src="bcloud.js" tppabs="http://yuntv.letv.com/player/vod/bcloud.js"></script> 
+			<script type="text/javascript"> 
+			if($(window).width()<768){
+				var leWidth = $(window).width();
+				var leHeight = $(window).width()*720/1280;
+				var player = new CloudVodPlayer(); player.init({"uu":"kd9ksjef36","vu":"76cadc70a7","pu":"26012e9127","auto_play":0,"gpcflag":1,"width":leWidth,"height":leHeight,"lang":"zh_CN"}); 
+			}
+			</script>
+		</div>
+
+		
+		<div class="part part-2 part-cons">
+			<div class="sub-head-box part-backcover">
+				<div class="title-left"></div>	
+				<h3>洪水突袭干旱村庄</h3>
+				<div class="title-right"></div>				
+			</div>
+			<div class="news-cons-s1 part-backcover">
+				<p>2016年12月8日，大雪节气翌日，台头村的后山西沟没有雪。黄土上，一边是已经枯竭的玉米茎秆，一排一排爬坡而上。当地长年干旱，村民们一年只会种一季玉米。</p>
+				<p>山的另一边就传出叮叮咚咚的敲打声，二十来个工人在凿石头，排石头。放眼望去，依山延伸的阶梯雏形显现。</p>
+				<p>台头村村委会主任许国柱介绍，工人们正在做土地修复，想要复原那一片在“7·19”洪水中被冲毁的梯田。工程已经开展了一个多月。</p>
+				
+			</div>
+
+			<div class="photo">
+				<ul class="photo-album photo-album1">				
+				<li>
+					<div class="photo-album-frame" style="display:block">
+						<div class="photo-album-pic"><img src="photo-1-01.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-01.jpg" width="100%"></div>
+						<div class="photo-album-caption">洪水袭击过后，台头村商业街上一家综合商店后面的客厅和卧室，墙上光亮的镜子现在满是泥污。室内尚且如此，可以想见室外的洪水破坏有多严重。</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-02.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-02.jpg" width="100%"></div>
+						<div class="photo-album-caption">洪水掠过后，村民刘明元用了一个星期左右把店里收拾好。如今，店里的货品齐全如昨，但墙上的泥水痕迹还未褪色。</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-03.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-03.jpg" width="100%"></div>
+						<div class="photo-album-caption">五年前，服装加工厂老板刘国元和妻子办了这家服装厂。洪水当天，他给妻子打电话，让妻子早点回家。妻子后来说，要是再晚五分钟回去，水就浸没房顶，回不去了。</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-04.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-04.jpg" width="100%"></div>
+						<div class="photo-album-caption">2016年12月8日，在充满潮气的店里，刘国元的二姐刘彦珍说，洪水把店里的缝纫机都冲坏了。刘国元和妻子将厂内的工人全部辞退之后，就去了南方打工。</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-05.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-05.jpg" width="100%"></div>
+						<div class="photo-album-caption">许国新在台头商业街上开有小卖部，年迈的父亲许丙章和母亲董占鱼住在店里。有村民看见许丙章在洪水中用手抓住窗户，结果还是被冲走了。2016年7月25日，许国新收拾老人遗物，母亲已下葬，父亲遗体还未找到。</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-06.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-06.jpg" width="100%"></div>
+						<div class="photo-album-caption">洪灾过去的冬天，冯师傅在此修鞋。许国新不他收租金，只图有个人看房子。</div>
+					</div>
+				</li>
+
+				
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-08.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-08.jpg" width="100%"></div>
+						<div class="photo-album-caption">许月庭妻子张素珍，女儿许丽娇和刚满月的外孙在洪灾中失踪。灾后他和女婿周博来开上车往家走。路不通，他们从石太铁路步行进村。7月底，失去妻子的许月庭拿着妻子的照片独自坐在房间里。</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-07.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-07.jpg" width="100%"></div>
+						<div class="photo-album-caption">到达台头村，在泥浆和废墟中，周博来再也找不到妻子许丽娇住的房子。他说自己一定要找到妻子儿子，孩子还没有见过爷爷。</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-09.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-09.jpg" width="100%"></div>
+						<div class="photo-album-caption">2016年7月24日，河北石家庄井陉县南峪镇台头村全景。</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-10.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-10.jpg" width="100%"></div>
+						<div class="photo-album-caption">2016年12月8日，入冬后的台头村，黄土干旱，树叶枯黄。</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="photo-1-11.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/photo-1-11.jpg" width="100%"></div>
+						<div class="photo-album-caption">2016年12月8日，台头村老集贸街道上，有一段混泥土的路面已经修好，而公园旧址的一侧也加建了一道约一米高的石墩段。</div>
+					</div>
+				</li>
+				<ul class="sub-head-points">
+						<li class="now"></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+					</ul>
+				
+				</ul>
+					
+			</div>
+			
+			
+			<div class="news-cons-s1 text-overflow">
+				<p>台头村，位于河北省西部边陲，石家庄井陉县南峪镇下辖自然村。这里气候干燥，降雨少，亦非地质灾害点，但却是2016年7月北方地区持续降雨所致洪灾（包括泥石流灾害）的重灾区之一，村内八人遇难，三人失踪。除了台头村，井陉县的贵泉村、小作镇，受灾也十分严重。河北省内还有邢台的大贤村、邯郸的武安等地都受到暴雨洪水的冲击。据河北民政厅截至7月25日9时的统计，7月18-21日的那场强降雨造成该省920.6万人受灾、130人死亡、110人失踪。</p>
+				<p>洪灾过去四个多月，台头村的老人们回忆起那场突至的洪水，茫然、无奈，又悲从中来。“不知道从哪儿来的，”有村民如此描述。他们听说，当时一共有三道洪水，把人“刮”走，把家当“刮”没了。</p>
+				<p>如今，灾后堆积在台头商业街街口的泥泞已经清理干净，取而代之的是一辆铲车和一堆堆的工程沙土。村民陈利娟走在村口大治桥边，大风刮起尘土飞扬，她转身躲避。</p>
+				<p>陈利娟原来住在台头村，婚后搬到附近的秀林镇，但仍会不时回娘家。这天她作为向导，与记者同行又重回灾区。“商业街以前是全村最繁华的地方了。”她回忆道。记者沿街数一遍，发现原来的三四十家商户，恢复营业的只有大概半数。</p>
+				<p>灾后最早开店的是几家粮食综合商店。洪水过后，村民刘明元用了一个星期左右把店里收拾好；灾后一个月，店里恢复营业。现在店里的货品齐全如昨，但墙上的泥水痕迹还未褪色。刘明元比划着数了数，货品加上一辆车的损失“大几十万元”。他展示一张收款条，纸条上列明村民灾后每人可以拿到900元的基本补助，以及其他几项金额不多的补贴。</p>
+				<p>也有一些商户被冲毁了，却无力重建。刘国元和妻子原本在刘明元的店旁开有一家服装加工厂，加工外销童装，把自己所有的钱都投入进去。12月8日，在充满潮气的店里，他的二姐刘彦珍说，洪水把他们20多台缝纫机都冲坏了，没钱修理，只能全部变卖。两口子将厂内的工人全部辞退之后，就去了南方城市打工。</p>
+				<p> “7·19”当天，不止一道洪流在台头村奔涌而过。财新网此前报道指，台头村西山的洪水，在商业街西头分开，又在街的东头重新汇合。街的最东处有一家早餐店，遭受着洪水从南北两个方向的冲击，三面墙壁瞬间被冲走，西墙和里屋的夹墙支撑着只剩骨架的房顶。当晚，早餐店店主张素珍和女儿、外孙一同被洪水“刮”走失踪。</p>
+				<p>商业街的东南方是台头村的老集贸街道，7月的另一道洪水冲毁了这里的一个公园和一段路。12月18日这天，记者看到村中老街道上，有几段混泥土的路面已经修好，而公园旧址的一侧也加建了一道约一米高的石墩段。</p>
+				<p>据财新网此前报道，大约在1966年前后，台头村村民为了扩张用地，开始用垃圾去填埋已经干涸多时的河床，后来在上面种庄稼，修公路。被问及该处从前是否有河水流经，陈利娟说自己压根不知道那里什么时候是河。此外，《财新周刊》今夏一则讲述华北洪水的报道中提到，此次的多个灾区20年没发过洪水，应对洪灾的经验基本没有，也是2016年这场大雨所致伤亡格外惨重的原因之一。谈及今后的防洪工作，许国柱说，村里修了防洪坝，并且会结合气象预报提前预防、预警。</p>
+				<p>在老街道一侧走上坡，就能到达台头村委会。那里一处展示板上贴着“新建集贸街道和文化广场效果图”，展示对老街道原址的改造，“长280米的新建集贸街道……22厘米水泥混凝土的路面，该街道使用功能兼具行车和泄洪。道路西侧设计为文化广场，广场建筑面积为2600平方米。广场配备休闲运动设施……”工程由北京中安建设有限公司承建，自9月中旬开展。</p>
+				<p>若干年后，如果台头村再遇到如此极端的大雨，这条新建的集贸街道，乃至后山西沟的那些梯田又是否承受得了冲击？</p>
+			</div>
+			
+		</div>
+
+		<div class="part part-3">
+		<div class="interactive-wrapper div-shadow">
+			 <div class="map-caption-box map-caption1">
+			 	  <div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin.png" tppabs="http://datanews.caixin.com/mobile/flood/images/map-pin.png" height="16px" />湖北武汉</p>
+			      <p>6月30日至7月6日，长江中下游地区出现当年入汛以来的最强降雨。这场降雨突破武汉有记录以来的周持续性降水量最大值。一周累计降雨量相当于40个武汉市内最大湖泊东湖的容量。7月6日10时，渍水漫城最严重的时候，武汉市全市共有162处渍水点，市内交通瘫痪。即便习惯了每逢夏季必然“看海”的武汉市民，也对这场罕见大雨引起的严重内涝抱怨诸多，当地填湖造地致使内涝频繁的问题亦再次被广泛讨论。</p>
+			    </div>
+			 <div class="map-caption-box map-caption2">
+			 	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin.png" tppabs="http://datanews.caixin.com/mobile/flood/images/map-pin.png" height="16px"/>河北邢台开发区大贤村</p>
+			      <p>7月19日至21日，河北邢台市发生连续强降雨，位于邢台开发区大贤村损失尤为惨重。大贤村位处发七里河下游，该河发源于邢台西部山区，为当地的行洪河道。财新网此前报道，事发当日，上游泄洪的洪水沿七里河冲至大贤村，但由于该处河道大幅度变窄，河北岸堤坝被铲，河道内更因铺设热力管线被渣土和热力管严重堵塞，导致洪水迅猛漫过河岸，向北横扫大贤村。截至7月23日7时，洪水造成邢台市25人死亡，13人失踪；其中邢台开发区共有17人死亡，1人失踪，其后河北邢台开发区主任等四名官员被停职。</p>
+			    </div>
+
+			 <div class="map-caption-box map-caption3">
+			 	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin.png" tppabs="http://datanews.caixin.com/mobile/flood/images/map-pin.png" height="16px"/>河北石家庄井陉</p>
+			      <p>7月19日13时至20日8时，河北石家庄井陉县平均雨量高达545.4毫米，局部区域更超出当地2015年全年降雨量。强降雨导致的洪水灾害下，井陉县小作镇伤亡惨重，截至7月24日，灾害造成当地36人死亡、35人失踪。据财新网此前报道，当地高速公路、西气东输等多项工程与小作镇河道有重合之处，原本的泄洪通道被工程地基、防护墙等设施阻塞，一些村民把河道变成了自留地、采石场等，也为洪水的肆虐埋下伏笔。</p>
+			    </div>
+
+			     <div class="map-caption-box map-caption4">
+			     	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin.png" tppabs="http://datanews.caixin.com/mobile/flood/images/map-pin.png" height="16px"/>河北邯郸武安</p>
+			      <p>7月19日至20日，邯郸武安遭遇20年来最大暴雨，其中马家庄监测站雨量达438.5毫米，已超过武安市自有气象记录以来单日最大降雨量。据官方通报，截至20日，武安因洪水失联人员20人，被淹村庄170多个，476人被洪水围困，3222间房屋倒塌。当时在武安张新庄村就有6个人失踪，只有1人找到了尸体。</p>
+			    </div>
+			     <div class="map-caption-box map-caption5">
+			     	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin.png" tppabs="http://datanews.caixin.com/mobile/flood/images/map-pin.png" height="16px"/>江苏宜兴</p>
+			      <p>7月4日，江苏省宜兴市杨巷镇，西溪河边的围堤出现溃口，决堤长达20余米宽。当天上午，杨巷镇附近村庄组织村民紧急疏散，不到一夜的时间，村庄被洪水淹没，最深渍水处达三米余深，村内的房屋、养殖的大闸蟹，以及鱼塘化为乌有。6月30日至7月6日的长江中下游大范围降雨后，宜兴市多地亦渍水严重。</p>
+			    </div>
+			    <div class="map-caption-box map-caption6">
+			    	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin.png" tppabs="http://datanews.caixin.com/mobile/flood/images/map-pin.png" height="16px"/>江苏盐城</p>
+			      <p>2016年的中国除了多番受到洪涝灾害的侵扰外，亦遭遇强对流天气的袭击。6月23日，江苏盐城龙卷风冰雹造成重大伤亡，截至7月24日9时，当地官方通报灾害已造成98人死亡，800人受伤。村庄里的青壮年多外出打工，留下无助的老人们、孩子们面对风暴冲击。</p>
+			    </div>
+			     <div class="map-caption-box map-caption7">
+			     	<div class="caption-exit"></div>
+			      <p class="title"><img src="map-pin.png" tppabs="http://datanews.caixin.com/mobile/flood/images/map-pin.png" height="16px"/>福建闽清</p>
+			      <p>7月9日，台风“尼伯特”登陆福建。7月7日至10日，其外围云系先后影响台湾、福建、浙江、上海、江苏、江西和安徽等地。其中，福建闽清受灾尤其严重，台风导致当地出现特大洪灾，截至7月14日18时，灾害造成60人死亡。“尼伯特”是1949年以来登陆中国的最强初台风，也是2011年以来登陆中国造成死亡失踪人口最多的台风。</p>
+			    </div>
+			<div class="map">
+			    <div class="map-pin map-pin1"></div>			   
+			    <div class="map-pin map-pin2"></div>
+			    <div class="map-pin map-pin3"></div>
+			    <div class="map-pin map-pin4"></div>
+			    <div class="map-pin map-pin5"></div>
+			    <div class="map-pin map-pin6"></div>
+			    <div class="map-pin map-pin7"></div>			   
+			</div>
+
+			<div class="map-part1-timeline">
+			      <div class="map-part1-timeline-line"></div>
+			      <div class="map-part1-timeline-pointer"></div>
+			      <div class="date-box">
+			        <span id="date-tag">3-1</span>               
+			      </div>
+			</div>
+			<div class="map-part1-cityline">
+			      <div class="map-part1-dotted-line"></div>
+			      <div class="map-part1-cityline-name">城市</div>
+			      <div class="map-line-number"></div>
+			</div>
+
+			<div class="chart-title rain-title1">雨最大的一年</div>
+			<div class="chart-title rain-title2">洪涝灾害致1.1亿人次受灾<br/><span style="font-size:16px">（2016年前三季度）</span></div>
+			<div class="chart-rain-caption pc-only">注：雨量数据来自网站rp5.ru所整理的世界气象组织全球通信系统数据。图中显示地点为2016年3-8月七次强降雨事件中，受影响较大的城市，以及年内各省受洪涝灾害影响较为严重的地点（除港澳台地区）。</div>
+			<div class="map-legend map-legend-1 ">面积代表雨量</div>
+			<div class="map-legend map-legend-2 ">深浅色代表频次</div>
+			<div class="nanhai"></div>
+			<div class="map-replay" alt="重播动画"></div>
+			<div class="map-zoom pc-only" alt="放大地图"></div>
+			<div class="map-zoom-out pc-only" alt="缩小地图"></div>
+			
+
+		</div> 
+		</div>
+
+		<script src="rain_chart.js" tppabs="http://datanews.caixin.com/mobile/flood/js/rain_chart.js"></script>
+		<div class="part">
+			<div class="news-cons-s1 mobile-only">
+				<p class="data-label">注：雨量数据来自网站rp5.ru所整理的世界气象组织全球通信系统数据。图中显示地点为2016年3-8月七次强降雨事件中，受影响较大的城市，以及年内各省受洪涝灾害影响较为严重的地点。（除港澳台地区）</p>
+			</div>
+		</div>
+		<div class="part part-4 part-cons" style="padding-top: 40px">
+			<div class="sub-head-box">
+				<div class="title-left"></div>
+				<h3>水祸</h3>			
+				<div class="title-right"></div>	
+			</div>
+			
+			<div class="news-cons-s1 text-overflow">
+				<p>面对洪水的洗礼，人类多么想挡住其冲击，却又是多么的无能为力。</p>
+				<p>2016年秋，民政部发布当年前三季度中国自然灾害报告。九个月里，自然灾害共造成中国1.9亿人次受灾，1317人死亡，319人失踪。这九个月，因灾死亡失踪的人口，比此前五年的平均值增加了12%。</p>
+				<p>当中以暴雨洪涝灾害至深至广。同样是这九个月，暴雨洪灾共造成1.1亿人次受灾（为同期所有自然灾害受灾人次的58%），1162人死亡或失，604.7万人次需紧急转移；20多个省份受灾，并以冀鄂皖湘等省份洪涝灾情最为严重；灾害所致的死亡失踪人口和直接经济损失均为2011年以来同期最高值。</p>
+				<p>民政部指出，灾情的时空分布并不均衡。2016年的重大灾害主要集中在6月至7月。</p>
+				<p>其中在7月，一前一后，一南一北，分别从天而降两次年内造成最重大洪涝的暴雨。单月死亡失踪人口、倒损房屋数量和直接经济损失均占2016年前三季度灾害总损失的五成。</p>
+				<p>别过7月河北仓惶悲情的村庄，时间再往回退两周，长江中下游地亦是堤坝溃口、洪水淹村、内涝袭城。</p>
+				<p>但对于身处江边的人，早在年初，就察觉到长江之水仿佛又有一种异样的涌动。</p>
+			</div>
+		</div>
+
+
+
+		<div class="part part-5">
+			<div class="interactive-wrapper div-shadow">
+				<!---->
+				<div class="chart-title disaster-title">2016年3-8月全国洪涝灾害情</div>
+				<div class="damage-chart" style="margin-top:40px">
+					<img src="damage.png" tppabs="http://datanews.caixin.com/mobile/flood/images/damage.png" width="100%" >
+				</div>
+
+			</div>
+		</div>
+
+		<div class="part part-6 part-cons" style="padding-top: 40px">
+			<div class="sub-head-box">
+				<div class="title-left"></div>
+				<h3>武汉</h3>			
+				<div class="title-right"></div>	
+			</div>
+
+			<div class="news-cons-s1 text-overflow">
+				<p>2016年的南方，春雨绵长。根据气象记录，3月下旬开始，南方持续降雨；至4月初，江南、华南的雨水仍然不停歇。</p>
+				<p>气象部门曾多番警示2016年防汛形势的严峻。4月初的大雨稍为停歇后，中央气象台发布预报指，当月江南、华南地区将继续有多场降雨。气象局当时如此描述4月的雨水：“停一天、下两三天”。</p>
+				<p>这一年，入汛之日也提前了。</p>
+				<p>3月19日起，受冷空气影响，江南南部、华南东部和北部出现较强的降雨。其后，广东、江西、湖南、福建等地18条河流发生超警洪水。</p>
+				<p>按照相关规定，“任（何）一（个）入汛代表站发生超过警戒水位的洪水时”，当天即可定为入汛之日。于是，3月21日成为2016年中国的入汛日，这比多年来平均的入汛日期（4月1日）早了11天。</p>
+				<p>2016年6月的最后一天，长江中下游地区出现当年入汛以来的最强降雨，沿江地区降雨量较常年同期偏多一到两倍；至7月7日，雨带才逐渐移开，并向长江上游推进。</p>
+				<p>这场大雨影响甚广，包括安徽、湖北、湖南在内的11省份遭受了不同程度的洪涝、滑坡、泥石流等灾害。</p>
+				<p>而谈及长江洪水与暴雨，必然回忆起武汉的大水围城。</p>
+				<p>这场广泛影响长江中下游的降雨对武汉造成的冲击尤为严重。据人民网报道，此次降雨突破武汉有记录以来的周持续性降水量最大值。一周累计降雨量相当于40个武汉市内最大湖泊东湖的容量。7月6日10时，渍水漫城最严重的时候，武汉市全市共有162处渍水点，市内交通瘫痪。即便是习惯了每逢夏季必然“看海”的武汉市民，也会对这场罕见大雨引起的严重内涝抱怨诸多。</p>
+			</div>
+
+
+			<div class="photo">
+				<ul class="photo-album photo-album2">				
+				<li>
+					<div class="photo-album-frame" style="display:block">
+						<div class="photo-album-pic"><img src="wuhan_5_1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/wuhan_5_1.jpg" width="100%"></div>
+						<div class="photo-album-caption">武汉蔡甸区2万人雨夜紧急大转移：7月5日，蔡甸区消泗乡进行近两万人的大转移，69岁的戴香绪和老伴带着两套被褥，几件换洗衣服就走了，因为收拾东西到很晚，他们在凌晨才离开村子，他们的女儿和孙子也回来帮忙了。</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="wuhan_5_2.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/wuhan_5_2.jpg" width="100%"></div>
+						<div class="photo-album-caption">晚上，安置点礼堂在放电影为灾民们解解闷。</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="wuhan_5_3.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/wuhan_5_3.jpg" width="100%"></div>
+						<div class="photo-album-caption">打完饭，熊昌炎带回家去给老伴吃。离他最远的一个孩子在广州打工，只有逢年过节的时候才能回去一趟。</div>
+					</div>
+				</li>
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="wuhan_5_4.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/wuhan_5_4.jpg" width="100%"></div>
+						<div class="photo-album-caption">独自收拾东西的老人。</div>
+					</div>
+				</li>
+				
+				<li>
+					<div class="photo-album-frame">
+						<div class="photo-album-pic"><img src="wuhan_5_5.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/wuhan_5_5.jpg" width="100%"></div>
+						<div class="photo-album-caption">蔡甸区连日大雨，路面湿滑容易出事故。在安置点附近，一个老人被车碰倒在地，被路过的好心人送院。</div>
+					</div>
+				</li>
+				<ul class="sub-head-points">
+						<li class="now"></li><li></li><li></li><li></li><li></li>
+					</ul>
+				</ul>
+					
+				
+			</div>
+
+			<div class="news-cons-s1 text-overflow">
+				<p>湖北武汉，又名“江城”，因长江之水冲流而立。武汉人可能是最懂得如何与长江之水共处的人。《武汉市志》记载，武汉地处长江中游，江汉平原东部，早在5000多年前，就有人于此聚居生息。长江支流过境，造就了这片水丰草茂的沃土，带来农耕及文明，河道亦成就了当地的经贸发展。</p>
+				<p>然而，江水也会无情地扫荡这一切。地方志援引了《湖北省近五百年气候历史资料》的记录：湖北沿江的涝洪等灾，多因连日暴雨造成；而武汉市春、夏、秋三季均会出现连日暴雨。此外，长江日报曾报道，武汉市区平均海拔为21-27米，比长江汉口站最高水位（1954年的29.73米）低2-8米，并指“汛期之中，江水悬在武汉头顶。”</p>
+				<p>武汉市部分地区处于江汉平原洼地。根据《气象灾害丛书——暴雨洪涝》（下称《暴雨洪涝》）一书，江汉平原是长江流域的沿江洼地，因受江河高水位的顶托，当地丧失自排能力、排水受阻、排水动力不足，因而洪涝灾害易发。</p>
+				<p>除了气候和地理等自然特征影响着武汉的洪水，人类活动也是一个导致当地漫水没城的原因。该书列举了人为因素对暴雨洪涝灾害的主要影响，包括破坏森林植被、围湖造田或建房、侵扰河道、过量抽取地下水等。</p>
+				<p>每当武汉成为泽国，当地填湖造地的问题就会一次次地被广泛讨论。武汉虽常年受洪水侵扰，但市内本有许多具有调蓄功能的天然湖泊。然而，据财新《新世纪》周刊在2011年发表的一篇报道，武汉填湖造地，几乎毁灭了“百湖之城”武汉的湖泊调蓄优势，也在很大程度上酿成了水淹全城的恶果。</p>
+				<p>以武汉沙湖为例，财新记者曾对比多张卫星图像，结果印证其湖面面积在十多年间变动显著。位于武汉武昌区的沙湖，为市内著名城中湖之一，对比2000年至2016年的历年卫星俯瞰图，不难发现湖面面积逐年缩小，其后更有房地产楼盘建设在这块新造陆地之上。</p>
+				<p>官方也提出过相应的措施。2013年6月的武汉市防汛会议上，武汉市水务局承诺，利用三年时间，投资130亿元，加强城市排水管网建设、加强清淤疏浚、推进污水处理建设，实现在“日降雨200毫米以内、小时降雨50毫米以内”，中心城区也不用“看海”。然而，三年后的2016年，大雨来时，漫水依然。</p>
+			</div>
+
+			<div class="sub-head-box" style="margin-top: 40px">
+				<div class="title-left"></div>
+				<h3>自然？人为？</h3>		
+				<div class="title-right"></div>		
+			</div>
+
+			<div class="news-cons-s1 text-overflow">
+				<p>文明因水而生，城市因靠水而取得诸多优势。人类离不开水，就要学习与之共存。</p>
+				<p>而水又可以有多无情？《暴雨洪涝》一书中写道，中国是世界上洪涝灾害最为严重的国家之一，国内有三分之二的资产、二分之一的人口、三分之一的耕地位处洪涝灾害威胁区域内。</p>
+				<p>根据《中国水旱灾害公报2014》，1950年至2014年，中国年均因洪涝灾害死亡人口达4327人，总计逾28万人死亡。2000年至2013年，洪涝灾害平均每年造成逾1.3亿人次，相当于中国人口的十分之一。</p>
+				<p>经济损失方面，《公报》数据显示，1990年（此前无同一口径的统计）至2014年间，洪涝灾害年均造成直接经济损失1387.98亿元，总计约3.47万亿元。</p>
+				<p>据《暴雨洪涝》，自上世纪90年代以来，洪涝灾害造成的直接经济损失，约为全国各类自然灾害总经济损失的62%，大约为同期GDP的1.55%。并且，近50年间，中国的“洪涝灾害发展具有面积增加和危机加重的趋势”。虽然分年份看来，各年受灾情况波动较大，但书中列举1950-2000年各个年代的洪涝灾害总受灾面积，依次为740万公顷、760万公顷、540万公顷、1047万公顷、1467万公顷，受灾面积增加趋势较为明显。</p>
+				<p>中国缘何频繁遭受洪涝灾害侵扰？地理、气候环境可以给出一部分答案。《暴雨洪涝》一书涉及中国重大洪涝灾害发生规律的相关章节中，将中国的自然地理环境，概括为以下特点：纬度跨度大，横跨赤道至寒温带六个温度带；海陆分布对比大，东迄太平洋，西缘亚欧大陆；地势复杂，西高东低，可由西向东分为三级阶梯。</p>
+				<p>如此特征，与大气气候相互作用，致使中国土地上冬夏季风显著，东部地区降雨量多。此外，季风气候的变异性导致中国成为全球气候年际变化较大的地区，旱涝频繁出现，水旱灾害易发。</p>
+				<p>加之，中国江河较多，流域面积达100平方公里的河流逾5万条，流域面积达1000平方公里以上的共约1500条。然而，河流分布并不均匀，珠江、长江、黄河、淮河、辽河、海河和松花江——中国七大水系的流域或下游多数集中在东部气候湿润的季风区。流域地区易生暴雨洪水。</p>
+			</div>
+
+			<div class="chart dilishu">
+				<div class="chart-title">中国缘何频受洪涝灾害侵扰？</div>
+				<ul class="dilishu-nav-points"><li class="now"></li><li></li><li></li><li></li><li></li><li></li></ul>
+				<ul class="chart-slides">
+					<li style="display: block;"><img src="book-1.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/book-1.jpg" width="100%"></li>
+					<li class="chart-slide" ><img src="book-2.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/book-2.jpg" width="100%"></li>
+					<li class="chart-slide" ><img src="book-3.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/book-3.jpg" width="100%"></li>
+					<li class="chart-slide" ><img src="book-4.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/book-4.jpg" width="100%"></li>
+					<li class="chart-slide" ><img src="book-5.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/book-5.jpg" width="100%"></li>
+					<li class="chart-slide" ><img src="book-6.jpg" tppabs="http://datanews.caixin.com/mobile/flood/images/book-6.jpg" width="100%"></li>
+				</ul>
+				
+			</div>
+			
+			<div class="news-cons-s1">
+				<p class="data-label">数据来源：气象灾害丛书——暴雨洪涝、中国天气网<br/>（自动播放）</p>
+			</div>
+			
+			<div class="news-cons-s1 dilishu_bottom text-overflow"  style="margin-top: 40px" >
+				<p>近40年来，中国城市化进程迅速。全国城镇化人口比例，自改革开放之初（1978年）的18%，提升至2015年的56.1%。城市将人类活动集中起来，严重考验环境的承受能力，同时，因为要支持人类活动，自然环境通常被过度开发。</p>
+				<p>以长三角地区为例，《长江流域资源与环境》期刊在2013年曾刊登过一篇有关当地城市和对洪灾风险影响的研究论文。该文如此开篇：城市化促进经济发展的同时，也深刻地改变洪水灾害体系，使洪涝灾害日益加剧。</p>
+				<p>前述研究锁定了长三角地区中的六个城市化典型区域（里下河区、秦淮河区、武澄锡虞区、浦东浦西区、杭嘉湖区及甬曹蒲区），评价在1991年、2001年及2006年的三个时段中，城市化是如何影响这些区域内的洪灾风险。所得结果如下：虽然在研究期内，这些地方的防洪减灾能力有所提高，但各个区域的洪灾风险却在增加。对此，研究团队认为，上述区域的防洪减灾基础建设与措施跟不上城市化的发展速度。</p>
+				<p>并且，城市化不断侵占河道、池塘、水田等，使得水域面积缩减而降低当地蓄滞洪水能力；城镇面积扩大，减低土地透水能力等，亦是导致风险增加的原因。</p>
+				<p>官方文件中也曾有类似表述。水利部国际合作与科技司在《水利科技发展“十二五”规划》一文中如此着墨：“近年来，受人口增长、经济社会发展方式粗放以及气候变化等因素的影响，防洪减灾形势更加严峻，流域性大洪水、特大暴雨洪灾和超强台风频繁发生。”此一发表于2010年的文件也提到，中小河流和中小城市防洪标准偏低，山洪地质灾害导致人民生命财产损失严重，需要建设完善可靠的防洪抗旱减灾安全体系。</p>
+			</div>
+
+
+			<div class="sub-head-box" style="margin-top: 40px">
+				<div class="title-left"></div>
+				<h3>“98”和厄尔尼诺</h3>
+				<div class="title-right"></div>				
+			</div>
+
+			<div class="news-cons-s1 text-overflow">
+				<p>新世纪以来，人们似乎依然没能摆脱1998年大洪水的梦魇。</p>
+				<p>那场被喻为“洪魔”的长江大水，曾横扫湖南、湖北、江西、安徽、江苏等省份，夺走1562条生命，致8411万人受灾，造成直接经济损失1345亿元。</p>
+				<p>“98洪魔”凶狠之处在于，降雨强度特别高，突发暴雨强度大而少见，且雨水集中在长江一线。当年夏季汛期77天，雨带长期徘徊。</p>
+				<p>而在2016年初，国家防总就指出，“长江流域发生大洪水的可能性很大，要以防御‘98+’大洪水为目标。”</p>
+				<p>2016年与1998年的相似之处，还在于两年同为超强厄尔尼诺事件的次年——中国通常在这样的年份发生洪灾。</p>
+				<p>2016年4月初，国家气候中心的监测显示，此次厄尔尼诺事件自2014年9月开始发展，在某程度上已经超过了1997年至1998年和1982年至1983年的两次超强厄尔尼诺事件。</p>
+				<p>中国气象局在2016年11月下旬公布了当年截至11月20日的雨量数据：中国全国平均降水量711毫米，为1951年有相关记录以来最多的一年，其中江苏、福建、新疆降水量破纪录。全国主要江河流域降水均偏多，长江流域为1954年以来最多，全国有184个县市累计降水量超历史极值。</p>
+				<p>然而，这一年破纪录的降雨量与厄尔尼诺事件，乃至洪涝灾害的相关性还待科学家进一步研究，亦盼日后人们对洪水灾害更能防患未然。</p>
+			</div>
+		
+			<div class="chart chart98">				
+				<div class="chart-title">2016年，为何让人想起1998年？</div>
+				<ul class="chart-nav-points"><li class="now"></li><li></li><li></li><li></li></ul>
+				<img src="chart-3-1.png" tppabs="http://datanews.caixin.com/mobile/flood/images/chart-3-1.png" width="100%">
+				<ul class="chart-slides">
+					<li style="display: block;"><img src="chart-3-2.png" tppabs="http://datanews.caixin.com/mobile/flood/images/chart-3-2.png" width="100%"></li>
+					<li ><img src="chart-3-3.png" tppabs="http://datanews.caixin.com/mobile/flood/images/chart-3-3.png" width="100%"></li>
+					<li ><img src="chart-3-4.png" tppabs="http://datanews.caixin.com/mobile/flood/images/chart-3-4.png" width="100%"></li>
+					<li ><img src="chart-3-5.png" tppabs="http://datanews.caixin.com/mobile/flood/images/chart-3-5.png" width="100%"></li>
+				</ul>
+
+			</div>
+			
+			<div class="news-cons-s1">
+				<p class="data-label">（自动播放）</p>
+			</div>
+			
+			<div class="sub-head-box" style="margin-top: 40px">
+				<div class="title-left"></div>
+				<h3>救灾之变</h3>		
+				<div class="title-right"></div>		
+			</div>
+
+			<div class="news-cons-s1">
+				<p>世纪洪水、1951年以来的最大雨量、超强厄尔尼诺事件的后续等，这些标签令2016年的洪水得以引起广泛的关注。</p>
+				<p>然而，洪灾年年有、处处有，许多区域性的中小型灾害的受关注程度通常只流于短消息一则，即使这些灾害对于受灾地区的人们冲击巨大。</p>
+				<p>中国科学院大气物理研究所的一项研究——《暴雨洪涝灾害灾情级别及其空间分布》，将中国1991年至1994年的暴雨洪涝灾情（包括受灾面积、死伤人口、经济损失等方面），按轻、小、中、大、巨分级。研究结果显示，轻小灾占所有灾害次数的83.2%，巨灾则占2%。</p>
+			</div>
+		</div>
+		
+
+		<div class="part part-7">
+			<div class="disaster interactive-wrapper div-shadow">
+				<div class="disaster-title chart-title">1950-2014年全国洪涝灾情</div>
+				<div class="disaster-nav">
+					<ul>
+						<li>农作物受灾面积（千公顷）</li>
+						<li>直接经济损失（亿元）</li>
+						<li>倒塌房屋（万间）</li>
+						<li>因灾死亡人口（人）</li>
+					</ul>
+				</div>
+				<div class="disaster-chart">
+					 
+				</div>
+			</div>				
+		</div>
+		<div class="part">
+			<div class="news-cons-s1 label-disaster">
+				<p class="data-label">数据来源：中国水旱灾害公报2014</p>
+			</div>
+		</div>
+
+		<script src="disaster_chart.js" tppabs="http://datanews.caixin.com/mobile/flood/js/disaster_chart.js"></script>
+
+		<div class="part part-8 part-cons" style="padding-top: 40px" >
+			<div class="news-cons-s1 text-overflow">
+				<p>“因为许多中小型灾害是区域性的，很难引起大范围的关注，但对于这些（受灾）群体来讲，损失不一定是轻的，也可以是很严重的。”壹基金备灾救灾部主任沙磊如是说。2016年的夏天，他和团队参与了湖北、河北等地的洪灾救灾工作。</p>
+				<p>2016年7月下旬井陉的那场洪水后，沙磊与团队留意到，一些没有人员伤亡的家庭，损失也比较重。例如，当地建的都是传统的石片房，或者是一些在山上掏的窑洞。当中一些民房直接被冲毁，对于这些家庭来说，这样的冲击也是难以承受的。</p>
+				<p>湖北武汉发大水时，沙磊团队也赶到武汉新洲区。他回忆，水淹过来之前，他们把村民转移到学校去，一个教室住上20多人，通风只能靠一两台电扇。当时教室里的温度高达38至39度，就像一间桑拿房。他认为转移安置点的卫生条件也十分值得关注。</p>
+				<p>沙磊自2007年开始投身救灾、灾后重建的工作中，至今夏已有快十年的经验。在他看来，公众对救灾工作的观念在这些年间有了一些改变。关于灾害，从前人们通常听到的是一些受灾数字，但慢慢地，公众开始更加关心受影响群体的灾后生活是否得到关怀。正如在武汉新洲区的那间教室，人们会问那里的卫生条件是否够好，儿童是否有地方玩耍。</p>
+				<p>不过，沙磊还观察到，一些农村的灾害自救能力变差了。</p>
+				<p>城镇化带来的农村空心化，在灾难面前被放大了。沙磊称，一些空巢化的农村在遭遇灾害后，应对能力和组织性都没有那么强了。“发救灾物资的时候，要扛米扛面的，但村里没有年轻人，都是老人，你必须把东西送到他们（老人）手里，老人没办法走很远。”</p>
+				<p>灾害过后，青壮年回家陪伴老人、小孩的时间通常也不多。如今，救灾不只是一个帐篷、一床被子的事。例如，救灾工作需要在父母缺席时，代为减轻灾害为儿童带来的心理冲击。儿童服务站就是方法之一：在灾区搭建一个活动板房，让小孩可以玩玩具，每天上音乐、美术课等。沙磊认为，这些工作可以让孩子感受到自己是被关怀的。</p>
+				<p>“城镇化确实是个大环境，”他坦言，农村的空巢化体现到在救灾上，就是救援组织要设法为这些老人和儿童提供专门的服务。</p>
+			</div>
+		</div>
+
+		<div class="part part-9">
+			<div class="news-cons-s1 ending">
+				<p>2016年接近尾声。陈利娟叹谓，夏天刚出洪灾，现在钙厂又停了。钙厂是台头村的经济支柱之一，井陉镁钙资源丰富，有北方最大的钙生产基地之称。但因为供暖季的来临，钙厂生产要让路给PM2.5的减排目标，厂子在11月中开始停产。她说，即将到来的春节，村民应该会过得很吃紧。</p>			
+			</div>
+		</div>
+		
+		
+		<div class="bottom">
+			<div class="bottom-credits">
+				<p><b>记者：</b>陈嘉慧 陈亮</p>
+				<p><b>开发：</b>韦梦</p>
+				<p><b>设计：</b>高旭 冷斌 韦梦</p>
+				<p><b>图片：</b>陈亮 梁莹菲</p>
+				<p><b>视频：</b>周逸宁 胡分海 秦雷雨 刘大可（实习）</p>
+				<p><b>监制：</b>黄晨 邱嘉秋</p>
+				<p>罗莉兰、杜广磊、陈玮曦、祝浩杰（实习）对本项目亦有贡献</p>
+				<p>  </p>
+				<p><b>科学顾问：</b>中国天气网</p>
+				<p><b>鸣谢：</b>深圳壹基金公益基金会、艾迪普（北京）文化科技股份有限公司</p>
+				<p><b>部分图片来自：</b>视觉中国</p>
+				<p >&nbsp;</p>
+				<p >注：</p>
+				<p >视频中所列河北省7月下旬暴雨洪涝灾害受灾数据统计截至7月25日。</p>
+				<p >&nbsp;</p>
+				<p >&nbsp;</p>
+				<div class="bottom-qr pc-only"><img src="qr.png" tppabs="http://datanews.caixin.com/mobile/flood/images/qr.png" width="160px"></div>
+			</div>
+			
+			
+
+		</div>
+	</div>
+	<div class="ending-bg"></div>
+
+	<div class="float-box">
+		
+		<div class="scroll-tip"><img id="sroll-tip-image" src="point.png" tppabs="http://datanews.caixin.com/mobile/flood/images/point.png" alt="scroll-tip"></div>
+		<div class="cx-logo"><a href="javascript:if(confirm(%27http://www.caixin.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.caixin.com/%27" tppabs="http://www.caixin.com/"><img src="caixin.png" tppabs="http://datanews.caixin.com/mobile/flood/images/caixin.png" alt="财新"></a></div>
+		
+	</div>
+
+
+
+<!-- 财新网客户端分享代码 -->
+<div style="display:none" id="__cxnewsapp_topbar">分享按钮是否显示的标志</div>
+<div style="display:none" id="__cxnewsapp_orientation">flexible</div>
+<div style="display:none" id="__cxnewsapp_sharetext">财新 | 2016年终策划：那一场不能被忘记的洪水（建议Wi-Fi浏览）</div>
+<div style="display:none" id="__cxnewsapp_sharephotourl">http://datanews.caixin.com/mobile/flood/images/weixin.png</div>
+<div style="display:none" id="__cxnewsapp_sharewxurl">http://datanews.caixin.com/mobile/flood/index.html</div>
+<div style="display:none" id="__cxnewsapp_sharewxthumburl">http://datanews.caixin.com/mobile/flood/images/weixin.png</div>
+<div style="display:none" id="__cxnewsapp_sharewxtitle">财新 | 2016年终策划：那一场不能被忘记的洪水（建议Wi-Fi浏览）</div>
+<div style="display:none" id="__cxnewsapp_sharewxtext">2016年前11个月中国平均降水量创纪录，是1951年以来最多的一年，前三季度暴雨洪灾共造成1.1亿人次受灾</div>
+
+<!-- 微信分享代码 -->
+
+<script src="jweixin-1.0.0.js" tppabs="http://datanews.caixin.com/mobile/flood/js/jweixin-1.0.0.js"></script>
+<script src="get_wx_config.js" tppabs="http://datanews.caixin.com/mobile/flood/js/get_wx_config.js"></script>
+<script>
+
+   
+    getWXConfig();
+
+    var imgUrl = "weixin.png"/*tpa=http://datanews.caixin.com/mobile/flood/images/weixin.png*/;
+    var lineLink = "index.htm"/*tpa=http://datanews.caixin.com/mobile/flood/index.html*/;
+    var shareTitle = '财新 | 2016年终策划：那一场不能被忘记的洪水（建议Wi-Fi浏览）';
+    var descContent = '2016年前11个月中国平均降水量创纪录，是1951年以来最多的一年，前三季度暴雨洪灾共造成1.1亿人次受灾';
+  
+    var appid = '';
+
+    wx.ready(function(){
+        wx.onMenuShareTimeline({
+            title: shareTitle, // 分享标题
+            link: lineLink, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: function () {
+                // 用户下一步分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareAppMessage({
+            title: shareTitle, // 分享标题
+            desc: descContent, // 分享描述
+            link: lineLink, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            type: '', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            success: function () {
+                // 用户下一步分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareQQ({
+            title: shareTitle, // 分享标题
+            desc: descContent, // 分享描述
+            link: lineLink, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: function () {
+                // 用户下一步分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+        wx.onMenuShareWeibo({
+            title: shareTitle, // 分享标题
+            desc: descContent, // 分享描述
+            link: lineLink, // 分享链接
+            imgUrl: imgUrl, // 分享图标
+            success: function () {
+                // 用户下一步分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+    });
+ 
+</script>
+
+<script src="main_n.js" tppabs="http://datanews.caixin.com/mobile/flood/js/main_n.js"></script>
+<!--caixin analytics start-->
+<script type="text/javascript" src="caixinlog.js" tppabs="http://file.caixin.com/webjs/common/caixinlog.js"></script>
+<!--caixin analytics end-->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+ga('create','UA-27956240-1','index-1.htm'/*tpa=http://datanews.caixin.com/mobile/flood/caixin.com*/);
+ga('require','displayfeatures');
+
+var dimensionObject = document.getElementById("author_baidu");
+if(typeof(dimensionObject)=="object"&&dimensionObject!=null){
+var dimensionValue = dimensionObject.innerHTML;
+ga('set','dimension1',dimensionValue);
+ga('send','pageview',{'dimension1':dimensionValue});
+}else{
+ga('send','pageview');
+}
+</script>
+
+</body>
+</html>
